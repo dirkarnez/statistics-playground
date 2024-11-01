@@ -1,12 +1,4 @@
-typescript-browser-script-tag
-=============================
-For quick prototyping
-
-### DOM type
-- https://github.com/microsoft/TypeScript/blob/main/src/lib/dom.generated.d.ts
-
+typescript-statistics-playground
+================================
 ### Reference
-- ES5
-    - [niutech/typescript-compile: Automatically compile TypeScript to JavaScript on the fly](https://github.com/niutech/typescript-compile)
-- ESModule
-    - [Sean-Bradley/text-typescript: Use TypeScript directly in HTML Script tags.](https://github.com/Sean-Bradley/text-typescript)
+- [The Clever Way to Count Tanks - Numberphile - YouTube](https://www.youtube.com/watch?v=WLCwMRJBhuI)
