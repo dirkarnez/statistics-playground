@@ -3,35 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/typescript@5.6.3/lib/typescript.js"></script>
 </head>
 <body>
-    <div id="root"></div>
-    <script type="text/typescript" src="./app.ts"></script>
-    <script>
-        Promise.all(
-            Array
-            .from(document.getElementsByTagName('script'))
-            .filter(script => script.type == "text/typescript")
-            .map(script => {
-                if (!!script.innerHTML) {
-                    return new Promise(res => res(script.innerHTML))
-                } else {
-                    return fetch(script.src)
-                    .then(response => response.text())
-                }
-            })
-        )
-        .then(scripts => {
-            scripts.forEach(scriptContent => {
-                const output = ts.transpileModule(scriptContent, { 
-                    compilerOptions: { 
-                        module: ts.ModuleKind.CommonJS
-                    }
-                });
-                eval(output.outputText);
-            });
-        });
+    <script type="module">
+        import { de }
     </script>
 </body>
 </html>
