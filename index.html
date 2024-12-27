@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+    See DevTools
     <script type="module">
         import { default as a } from "./distributions.2.2.0.esm.min.js";
         import { default as jStat } from "./jstat.1.9.6.esm.min.js";
@@ -39,28 +40,21 @@
                 })
             });
 
-        const allSampleMeans = allSamples.map(sample => {
-            return getMean(sample);
+        const allSampleMeansFloored = allSamples.map(sample => {
+            return Math.floor(getMean(sample));
         });
 
 
         const xAxis = Array(40).fill(0).map((_, index) => 160 + index);
 
         xAxis.forEach(xAxisData => {
-            console.log(`allSampleMeans`)
-        })
-        
-            // .reduce((p, c) => (
-            //     [
-            //         ...p, 
-            //         ...c.map(r => (
-            //             Math.floor(160 + (r * 40))
-            //         ))]
-            // ), []);
-
-
-        debugger;
-        
+            const yPlot = allSampleMeansFloored
+            .filter(sampleMeanFloored => {
+                return xAxisData == sampleMeanFloored
+            })
+            .fill("*");
+            console.log(`${xAxisData}: ${yPlot}`)
+        });
     </script>
 </body>
 </html>
