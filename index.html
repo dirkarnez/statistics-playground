@@ -8,9 +8,15 @@
     <script type="module">
         import { default as a } from "./distributions.2.2.0.esm.min.js";
         import { default as jStat } from "./jstat.1.9.6.esm.min.js";
-        // random height (160cm to 200cm)
+        // random height (160cm to less than 200cm)
+        const populationSize = 1000;
+
+        const getMean = array => {
+            return array.reduce((p, c) => p + c, 0) / array.length
+        }
+
         const population = jStat
-            .rand( 1000, 1 )
+            .rand( populationSize, 1 )
             .reduce((p, c) => (
                 [
                     ...p, 
@@ -19,17 +25,38 @@
                     ))]
             ), []);
 
+        const populationMean = getMean(population);
+        console.log(`population mean is ${populationMean}`);
+
         const sampleSize = 10; // adjustable
+        const numberOfSamples = 1000;
+
+        const allSamples = jStat
+            .rand(numberOfSamples, sampleSize )
+            .map(sample => {
+                return sample.map(eachRandomPick => {
+                    return population[Math.floor(eachRandomPick * populationSize)]
+                })
+            });
+
+        const allSampleMeans = allSamples.map(sample => {
+            return getMean(sample);
+        });
+
+
+        const xAxis = Array(40).fill(0).map((_, index) => 160 + index);
+
+        xAxis.forEach(xAxisData => {
+            console.log(`allSampleMeans`)
+        })
         
-        const samples = jStat
-            .rand(1000, 1 )
-            .reduce((p, c) => (
-                [
-                    ...p, 
-                    ...c.map(r => (
-                        Math.floor(160 + (r * 40))
-                    ))]
-            ), []);
+            // .reduce((p, c) => (
+            //     [
+            //         ...p, 
+            //         ...c.map(r => (
+            //             Math.floor(160 + (r * 40))
+            //         ))]
+            // ), []);
 
 
         debugger;
