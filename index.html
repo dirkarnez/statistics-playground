@@ -8,7 +8,29 @@
     <script type="module">
         import { default as a } from "./distributions.2.2.0.esm.min.js";
         import { default as jStat } from "./jstat.1.9.6.esm.min.js";
-        const aa = jStat.rand( 100, 1 );
+        // random height (160cm to 200cm)
+        const population = jStat
+            .rand( 1000, 1 )
+            .reduce((p, c) => (
+                [
+                    ...p, 
+                    ...c.map(r => (
+                        Math.floor(160 + (r * 40))
+                    ))]
+            ), []);
+
+        const sampleSize = 10; // adjustable
+        
+        const samples = jStat
+            .rand(1000, 1 )
+            .reduce((p, c) => (
+                [
+                    ...p, 
+                    ...c.map(r => (
+                        Math.floor(160 + (r * 40))
+                    ))]
+            ), []);
+
 
         debugger;
         
