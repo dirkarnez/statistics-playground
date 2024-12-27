@@ -18,7 +18,13 @@
 - [The Clever Way to Count Tanks - Numberphile - YouTube](https://www.youtube.com/watch?v=WLCwMRJBhuI)
 
 ### Libraries
+- [statistics.js - Documentation](https://thisancog.github.io/statistics.js/inc/distributions.html)
+- [stdlib-js/stdlib: ✨ Standard library for JavaScript and Node.js. ✨](https://github.com/stdlib-js/stdlib)
+- [math.js | an extensive math library for JavaScript and Node.js](https://mathjs.org/)
 - [richarddmorey/stat-distributions-js: Javascript library for the visualization of statistical distributions](https://github.com/richarddmorey/stat-distributions-js)
+- [mathigon/fermat.js: Mathematics and statistics library for TypeScript.](https://github.com/mathigon/fermat.js/)
+- [Statistical Libraries in JavaScript](https://scribbler.live/2024/07/24/Statistical-Libraries-in-JavaScript.html)
+- [Four Serious Math Libraries for JavaScript](https://smartbear.com/de/blog/2013/four-serious-math-libraries-for-javascript/)
 
 ### Notes
 - no matter what is the population distribution, if we take enough samples, we can approximate the population mean by the sample mean
