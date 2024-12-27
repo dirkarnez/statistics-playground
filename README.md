@@ -1,7 +1,10 @@
-statistics-playground
-=====================
+[statistics-playground](https://dirkarnez.github.io/statistics-playground/)
+===========================================================================
 ### Tutorials
 - [088 高等数学—正态分布 1中心极限定理 - YouTube](https://www.youtube.com/watch?v=oNG6YuNKAJI)
+
+### TODOs
+- [ ] More fake scenarios
 
 ### Reference
 - [The Clever Way to Count Tanks - Numberphile - YouTube](https://www.youtube.com/watch?v=WLCwMRJBhuI)
