@@ -12,6 +12,7 @@
 ### TODOs
 - [ ] More fake scenarios
 - [ ] Central limit theorem
+- [ ] allow customized population distribution
 
 ### Reference
 - [The Clever Way to Count Tanks - Numberphile - YouTube](https://www.youtube.com/watch?v=WLCwMRJBhuI)
