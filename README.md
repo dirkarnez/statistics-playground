@@ -13,6 +13,8 @@
 - [ ] More fake scenarios
 - [ ] Central limit theorem
 - [ ] allow customized population distribution
+- [ ] Confidence Interval
+  - https://www2.ccrb.cuhk.edu.hk/stat/ConfidenceInterval.htm
 
 ### Reference
 - [The Clever Way to Count Tanks - Numberphile - YouTube](https://www.youtube.com/watch?v=WLCwMRJBhuI)
