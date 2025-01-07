@@ -10,6 +10,7 @@
 - [Herman Yeung - M1 Intensive Course 精讀課程 - Chapter 11a : Normal Distribution 正態分佈 - YouTube](https://www.youtube.com/watch?v=z8EhrL6hND8)
 - [《赤裸裸的统计学》| 什么是大数定律？|什么是中心极限定理？|什么是随机抽样？|什么是回归分析？|常犯的概率学错误有哪些？|查尔斯·惠伦作品|Naked Statistics - YouTube](https://www.youtube.com/watch?v=3rJP96q4wec)
 - [【麻省理工博士】人人都要懂的统计思维：相关≠因果 - YouTube](https://www.youtube.com/watch?v=f7LPJihhD1s)
+- [统计学中的参数估计与偏差分析：机器学习基础-CSDN博客](https://blog.csdn.net/sinat_31608641/article/details/133413608)
 
 ### TODOs
 - [ ] More fake scenarios
